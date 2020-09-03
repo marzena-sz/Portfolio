@@ -1,0 +1,2250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="339" name="Portfolio" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="340" name="Allegro - user registration (Regular account)" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="342" name="Checking the required fields for registration.">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[245]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the user can not register without filling in all of the required fields.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the registration Allegro page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields apart from the field &quot;Email&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has not been registered. There is an error message about&nbsp; the &quot;Email&quot; field being empty.&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields apart from the field &quot;Hasło&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has not been registered. There is an error message about&nbsp; the &quot;Hasło&quot; field being empty.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields apart from the field &quot;Dzień&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has not been registered. There is an error message about&nbsp; the &quot;Dzień&quot; field being empty.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields apart from the field &quot;Miesiąc&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has not been registered. There is an error message about&nbsp; the &quot;Miesiąc&quot;&nbsp;field being empty.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields apart from the field &quot;Rok&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has not been registered. There is an error message about&nbsp; the &quot;Rok&quot; field being empty.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields apart from the field for accepting Allegro regulations.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has not been registered. There is an error message about&nbsp; the accepting Allegro regulation&nbsp;field being empty.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully registered.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="344" name="Email field verification.">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[246]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the field accepts only correct email address, which has proper form and doesn&#39;t contain diacritical marks and free space.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>4.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address that contains space.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message saying that the &quot;Email&quot; field has been incorrectly filled in.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address that contains diacritical marks.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message saying that the &quot;Email&quot; field has been incorrectly filled in.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address that contains special marks as well as numbers.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully registered.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address that contains only big letters.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully registered.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address which has incorrect form, for example: @boren90.wp.pl.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message saying that the &quot;Email&quot; field has been incorrectly filled in.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address that has correct form, for example: korek90@wp.pl</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully registered.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="346" name="Hasło field verification.">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[247]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the &quot;Hasło&quot; field accepts all of the symbols/marks, and to register, the password must contain at least 8 symbols, 1 big letter, 1 small letter and 1 number.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Hasło&quot; field with diacritical marks, special symbols, numbers, space as well as big letters and small ones.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Hasło&quot; field should accept of the symbols.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: MartekCZ.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message saying that the password doesn&#39;t contain a number.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: kO8re.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message saying that the password is too short.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: martek89.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message saying that the password doesn&#39;t contain a big letter.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: &quot;*).</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message saying that the password doesn&#39;t contain at least one small and big letter, a number and is too short.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: Martek89.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully registered.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: Martek2445KOKOnas.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully registered using long password.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="348" name="Dzień field verification.">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[248]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the field accepts only numbers by using the keyboard or a&nbsp;mouse.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Dzień&quot; field with diacritical marks, special symbols, space and letters.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field shouldn&#39;t accept this kind of data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Set up a day using arrows.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Arrows should work properly. The upper arrow sets up a day ascending, and the lower arrow descending.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="350" name="Miesiąc field verification.">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[249]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the &quot;Miesiąć&quot; field works properly and it can be also set up by using a mouse.</p>
+
+<p>You can navigate through all of the months on the list by using the keyboard and typing in the first letter of a month that you are interested in.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Try to fill in the &quot;Miesiąc&quot; field with diacritical marks, special signs, space and letters.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepts only umbers.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Miesiąc&quot; field and pick a random month from the list.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Chosen month should show up inside the &quot;Miesiąć&quot; field.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Miesiąć&quot; field and type in the first letter of a month that you are interested in.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Inside the field shows up a month that starts with the&nbsp;letter which has been typed by the user.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Miesiąć&quot; field and type in the first letter of a month that you are interested in (use only big letters).</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Inside the field shows up a month that starts with the&nbsp;letter which has been typed by the user.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Miesiąc&quot; field and type in the first letter of a month that starts with &quot;m&quot;, &quot;s&quot; or &quot;l&quot;. Use the same letter at least three times.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Inside the field shows up a month that starts with the&nbsp;letter which has been typed by the user. By typing in the same letter a few times it&#39;s&nbsp;possible to navigate to months that starts with the same letter.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Miesiąć&quot; field and try to type in a&nbsp;full name of a random month.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>It is impossible to type in a full name of a month using the keyboard.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="352" name="Rok field verification.">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[250]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the &quot;Rok&quot; field works properly and accepts only numbers using a mouse and&nbsp; a&nbsp;keyboard.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill the &quot;Rok&quot; field with diacritical marks, special signs, space and letters.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field should accept only&nbsp;numbers.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Use arrows to set up a random year.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Arrows should work properly. The upper arrow sets up a year ascending, and the lower arrow descending.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="354" name="Checking functionality that shows encrypted password.">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[251]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality shows encrypted&nbsp;passwords and encryptes showed ones.&nbsp;By default the entered password should be encrypted.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page and the &quot;Hasło&quot; field is filled with random data.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>4.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click the icon that looks like a crossed eye.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The icon now should look just like an eye, and the password should be decrypted.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click the decryption&nbsp;icon, twice.&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The icon now should look just like an eye, and the password should be encrypted.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Clear the &quot;Hasło&quot; field. Click the decryption icon and fill in the field with random data again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The password should&nbsp;be decrypted.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click the decryption icon and refresh the page.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The functionality that decrypts the password should go back to it&#39;s&nbsp;default stage which is encrypting the entered password.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Make sure that the password you typed in also contains diacrytical marks, special signs and some numbers then click the decrytpion icon.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The password should be decrypted and shown as it is.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="358" name="Checking functionality that translates the registration page..">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[253]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality&nbsp; translates the page in the right way (from polish to english and from english to polish).</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>4.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;English Version&quot; link.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page is translated to english.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Polisg Version&quot; link.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page should be translated to polish.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;English Version&quot; link, after that refresh the page.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The site should remeber the picked option and still show the form in english.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Polish Version&quot; link, after that refresh the page.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The site should remember the picked option and still show the form in polish.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Click the&nbsp; &quot;English Version&quot; link. Close Allegro website and open&nbsp;it again. Go back to the Allegro registration page.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The site should remember the picked option and still show the form in english.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Polish Version&quot; link. Close Allegro website and open it again. Go back to the Allegro registration page.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The site should remember the picked option and still show the form in polish.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="360" name="An attempt to register a user with the same login name,">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[254]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that it&#39;s&nbsp;not possible to register a user with the same data that already exists in the database.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page, a user X already exists in the database.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields with the same data that was used to register the user X.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message saying that an account with this data already exists in Allegro database.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="380" name="An attempt to register a user with banned account.">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[264]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that a user that has been blocked can&#39;t register using&nbsp;the same data of banned account.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user&#39;s account has been banned,&nbsp; the user&nbsp;is on the Allegro registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in all the required fields with the same data of banned account.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user using&nbsp;this data can&#39;t register.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="382" name="An attempt to register a user with deleted account.">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[265]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the user with deleted account can be successfully registered.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user had an accout but the account has been deleted, the user is on the Allegro registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in all of the required fields with the same data of the deleted account.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully registered.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="432" name="Checking functionality that selects account types.">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[274]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality shows the appropriate form for a given option.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Try to pick two options&nbsp;: &quot;Konto Zwykłe&quot; and &quot;Konto Firmowe&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Picking two options is impossible.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Pick &quot;Konto Firmowe&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The right form has been diplayed for the given option.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Pick &quot;Konto Zwykłe&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The right form has been displayed for the given option.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Try to deselect any of options by clicking on emply spaces on the page.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Deselecting any of option is impossible.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="435" name="Checking the dafault account selection which is Regular account.">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[275]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the&nbsp;default account is always regular account.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go back to the Allegro main page and click &quot;Zał&oacute;ż Konto&quot; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Regular account should be set by default.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Go back to the Allegro main page and click &quot;Założ Konto&quot; button. Next pick Business account and use this address:&nbsp;<a href="https://allegro.pl/rejestracja#/">https://allegro.pl/rejestracja#/</a></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Regular account should be set again, by default.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="497" name="Checking functionality of the date of birth fields.">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[278]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We confirm that the dates are correctly adjusted to the days of the months and the year.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Dzień&quot; field with a number 31, for the field &quot;Miesiąc&quot; set February, and pick any randon year from 1900-2020.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message about the wrong day, because February usually has 28 days.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Dzień&quot; field with a number 29, for the field &quot;Miesiąc&quot; set February, and set a year to 2004.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The date should be accepted. This is the so-called LEAP-year, it happens every four years, where February exceptionally has 29 days instead of 28.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Dzień&quot; field with a number 30, for the field &quot;Miesiąc&quot; set September, and set a random year between 1900-2020.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The date is accepted, but when you type in a year bigger than 2006 then there is a problem with age of the user. The user can&#39;t be younger than 14 to register.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="468" name="Boundary values for the &quot;Rok&quot; field.">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[276]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that it is impossible to set up a year that is smaller&nbsp;than 1900 and bigger&nbsp;that our current year 2020.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is&nbsp;on the Allegro registration page and&nbsp;filled in all of the required fields apart from the &quot;Rok&quot; field.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>6.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>In&nbsp;the &quot;Rok&quot; field type&nbsp;in 1899 year.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message saying that the min. year that can be set is 1900.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>In&nbsp;the &quot;Rok&quot; field type&nbsp;in 2021 year.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message saying that the max. year that can be set is 2020.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In&nbsp;the &quot;Rok&quot; field type&nbsp;in 1901 year.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully registered.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In&nbsp;the &quot;Rok&quot; field type&nbsp;in 2019 year.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully registered.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Rok&quot; field using arrows set a year smaller than 1900.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Its impossible to set up a year smaller than 1900.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Rok&quot; field using arrows set a year bigger than 2020.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>It&#39;s impossible to set up a year bigger than 2020.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Rok&quot; field type in&nbsp;a three or two digit number.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message about the wrong year.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Rok&quot; field type in&nbsp;a five-digit number.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>It&#39;s impossible to type in a year that has more than 4 digits.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Try to fill in the &quot;Rok&quot; field with numbers smaller&nbsp;than 0.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field shouldn&#39;t accept numbers smaller than 0.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="478" name="Boundary values for the &quot;Dzień&quot; field.">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[277]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the field doesn&#39;t accept digits smaller than 1 and bigger than 31.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page and&nbsp;filled in all of the required fields&nbsp;&nbsp;apart from the &quot;Dzień&quot; field.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Dzień&quot; field with a number&nbsp;smaller than 0.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field doesn&#39;t accept smaller numbers than 0.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Dzień&quot; field with a number 0.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message&nbsp;about the wrong day.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Dzień&quot; field with a number bigger than 31.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field doesn&#39;t accept numbers bigger than 31.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Fill the &quot;Dzień&quot; field with a three-digit number.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field doesn&#39;t accept three-digit numbers.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Dzień&quot; field with numbers between 1 and 31.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully registered.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="517" name="Boundary values for the user's age.">
+	<node_order><![CDATA[16]]></node_order>
+	<externalid><![CDATA[279]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the user younger than 14 can&#39;t register.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro registration page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Type in this date: 16 July 2007.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The date is accepted.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Type in this date: 16 August 2006.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The date is accepted.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Type in this date: 16 August 2007.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message that the user has to have at least 14 years to be able to register.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Type in this date: 16 July&nbsp;2008.</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message that the user has to have at least 14 years to be able to register.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="341" name="Allegro - user login" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="362" name="Checking the required fields for logging in.">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[255]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that user is able to log in only when he/she filled in all of the required fields.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro login page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;login lub e-mail&quot; field, the field &quot;hasło&quot; leave empty.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The website displayed error message that the field &quot;hasło&quot; is required.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;hasło&quot; field, leave the &quot;login lub e-mail&quot; field empty.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The website displayed error message that the field &quot;login lub email&quot; is required.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;login lub e-mail&quot; as well as &quot;hasło&quot; fields.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully logged in to Allegro.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Leave the &quot;Login lub e-mail&quot; and &quot;hasło&quot; fields empty.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The website displayed error message that&nbsp;both fields are required.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="364" name="Validation of the Login/Email and the Hasło field.">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[256]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the fields accept only and only data that exsists already in the data base and that this data is correctly assigned to the user.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user has at least two accounts on the Allegro website, the user is on the login page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in the field &quot;Login lub email&quot;. The field&nbsp;&#39;Hasło&#39; fill in with data that does not exsist in the Allegro&#39;s data base.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message displayed that the field &quot;Login lub email&quot; or &quot;Hasło&quot; are not correct.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Fill in the&nbsp;&quot;Login lub email&quot; and &quot;Hasło&quot; fieds with data of the first account or the second one.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been successfully logged in to Allegro.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Fill in the field &quot;Login lub email&quot; with data that does not exsist in the data base, while the field &quot;Hasło&quot; fill in with correct data that was used while registering one of the Allegro accounts.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message displayed about incorrect data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Fill in the field &quot;Login lub email&quot; with correct data that was used while registering one of the Allegro accounts, while the field &quot;Hasło&quot; fill in with data that does not exsist in the data base.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message displayed about incorrect data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Login lub e-mail&quot; field with&nbsp;data of the first account, but the field &quot;Hasło&quot; fill in with data of the second&nbsp;account.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error displayed about incorrect data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Login lub e-mail&quot; field with&nbsp;data of the second account, but the field &quot;Hasło&quot; fill in with data of the first account.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message displayed about incorrect data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="368" name="Checking functionality that shows encrypted password.">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[258]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality shows encrypted&nbsp;passwords and encryptes showed ones.&nbsp;By default the entered password should be encrypted.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on Allegro login page, the &quot;Hasło&quot; field is filled in with random data.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>4.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click the icon that looks like a crossed eye.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The icon now looks like an eye and the password&nbsp; should be shown.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click the decrypting icon, twice.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The icon should look like a crossed eye and the password should be encrypted.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Decrypt the password, after this refresh the page.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The functionality that decrypts the password should go back to it&#39;s&nbsp;default stage which is encrypting the entered password.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>The password that has been entered should also contain diacritical marks, special ones as well as numbers then click the decrypting icon.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The whole password should be properly decrypted and shown as it is.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Remove the entered password. Click the decrypting icon and then fill in the field &quot;Hasło&quot;&nbsp;again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The entered password isn&#39;t encrypted.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="372" name="Checking functionality of logging into Allegro using Facebook account.">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[260]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the user is successfully logged in to Allegro website using existing Facebook account.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user has an account on Allegro and&nbsp;at least two Facebook accounts. One facebook account should have the same email address&nbsp;for which the registration was made on the Allegro website, and another account should have completely different email address. The user is on the login Allegro page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Zaloguj przez Facebook&quot; button. Use Facebook account with the same email address, that was also used to register on Allegro website.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The message about connecting both accounts has been displayed. The user is successfully logged into Allegro Account.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Zaloguj przez Facebook&quot; button. Use Facebook account with different email address, than email that was also used to register on&nbsp;Allegro webiste.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user didn&#39;t log in. There is a message that given email address doesn&#39;t exist in the data base. There is also&nbsp;a short form to register on Allegro website.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="374" name="Checking functionality of logging into Allegro using Google account.">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[261]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the user is successfully logged in to Allegro website using existing Google account.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user has an account on Allegro and&nbsp; at least two Google accounts. One Google account should have the same email address&nbsp;for which the registration was made on the Allegro website, and another account should have completely different email address. The user is on the login Allegro page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Zaloguj przez Google&quot; button. Use Google account with the same email address, that was also used to register on Allegro website.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The message about connecting both accounts has been displayed. The user is successfully logged into Allegro Account.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Zaloguj przez Google&quot; button. Use Google account with different email address&nbsp;than email that was also used to register on&nbsp;Allegro webiste.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user didn&#39;t log in. There is a message that given email address doesn&#39;t exist in the data base. There is also&nbsp;a short form to register on Allegro website.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="376" name="Checking functionality of &quot;Nie pamietasz hasła&quot; link.">
+	<node_order><![CDATA[1007]]></node_order>
+	<externalid><![CDATA[262]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality works properly, and after clicking on the link the user is redirected to the password change page.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user has three Allegro accounts: active, banned and deleted, and is on the Allegro login page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Nie pamietasz hasła?&quot; link, after redirecting to the password change page, leave the form blank.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message about the lack of an email address or login.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Nie pamietasz hasła?&quot; link, after redirecting to the password change page, fill in the field with data that doesn&#39;t exsists in the Allegro data base.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is a message about the lack of account with this kind of data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Nie pamietasz hasła?&quot; link, after redirecting to the password change page, fill in the field&nbsp;with data that exists in the Allegro data base.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A code to change the password has been sent to the user&#39;s email.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Nie pamiętasz hasła&quot; link, after redirecting to the password change page, fill in the field with an account data that has been banned.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message about&nbsp;wrong login or email.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Nie pamietasz hasła?&quot; link, after redirecting to the password change page, fill in the field with an account data that has been deleted.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message about&nbsp;wrong login or email.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Click &quot;Nie pamietasz hasła&quot; link, after redirecting to the password change page, fill in the field with incorrect email address that contains diacritical marks or free space.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is an error message about wrong login or email.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="384" name="Blocked user login attempt.">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[266]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that blocked user can&#39;t log into his/her Allegro account.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user has an account that is blocked and is on the Allegro login page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Log in to Allegro using data of blocked account.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user couldn&#39;t log in.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="386" name="An attempt to login a user with deleted account.">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[267]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the user with deleted account can&#39;t be log in on this&nbsp;account any more.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user has an account that has been deleted and&nbsp;is on the Allegro login page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Log in to Allegro account using data of deleted account.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user can&#39;t log in. There is a message that this account doesn&#39;t exist.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="425" name="Checking functionality of the &quot;ZAREJESTRUJ SIĘ&quot; button.">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[273]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this button works properly and after clicking on it, the user is redirected to registration page.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is on the Allegro login page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click the &#39;&#39;ZAREJESTRUJ SIĘ&#39;&#39; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user is redirected to the registration allegro page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="527" name="Allegro - shopping cart" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="528" name="Checking functionality of adding an item.">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[280]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality adds an item with unchanged&nbsp;data.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, the shopping cart is empty and the user is&nbsp;on the main Allegro page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Add a new item, and click the &quot;Dodaj do koszyka&quot; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The item has been added to the shopping cart.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Add a new&nbsp;item to the shopping cart, then add another item of the same seller from the small list under the item that you added (&quot;Inne przedmioty sprzedającego&quot;).</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The item has been added to the shopping cart.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="534" name="Checking the memory of the shopping cart.">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[283]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that after leaving our shopping cart our items are still there when we come back.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there are a few items added to the shopping cart and the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the main Allegro page, then go back to the shopping cart again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All the previously added items should be still there.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Close Allegro website&nbsp;then go back to the Allegro main page and open your shopping cart again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All the previously added items should be still there.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="558" name="Checking functionality of &quot;sprzedający&quot; checkbox.">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[291]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality checks and unchecks items from the same seller. This option is checked by default.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there are a few items from different sellers added&nbsp;to the shopping cart and the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Uncheck a random seller.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All&nbsp;items of that seller should be automatically unchecked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Check the seller that has been unchecked.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All&nbsp;items of that seller should be automatically checked again.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Uncheck a random seller,&nbsp;go to the main Allegro page then&nbsp;go back to your shopping cart.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The act&nbsp;of unchecking this seller should&nbsp;be remebered by the page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Select the seller that has been deselected, go to the main Allegro page then go back to your shopping cart.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The act of checking this seller should be remembered by the page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Uncheck a random seller,&nbsp;close Allegro website&nbsp;and then&nbsp;go back to your shopping cart again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The act of unchecking that seller should be remembered by the page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Select the seller that has been deselected, close Allegro website&nbsp;and then&nbsp;go back to your shopping cart again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The act of checking this seller should be remember by the page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="551" name="Checking functionality of &quot;cały koszyk&quot; checkbox.">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[290]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality selects all items inside the shopping cart&nbsp;by default, and by unchecking this checkbox all&nbsp;items in the shopping cart are deselected. Also, when any item is being deselected separately this option is being automatcaly unchecked.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro and the shopping cart is opened, inside the shopping cart there are a few items already added.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>4.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Uncheck the &quot;cały koszyk&quot; checkbox.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All items should be deselected and grayed out&nbsp;including the &quot;cały koszyk&quot; box</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Check the &quot;cały koszyk&quot; checkbox again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All items should be selected and colorful including the &quot;cały koszyk&quot; option.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Uncheck the &quot;cały koszyk&quot; checkbox and leave the shopping cart page.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page has been opended properly, without any errors.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Add a new product to the shopping cart, and go the shopping cart page.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The added item should be checked, the rest items stay&nbsp;unchecked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Uncheck the &quot;cały koszyk&quot; checkbox and close Allegro website, then go back to you shopping cart again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All items should stay being unchecked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Check the &quot;cały koszyk&quot; checkbox and close Allegro website, then go back to you shopping cart again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All items should stay being checked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Uncheck picked item from the shopping cart using the checkbox next to its image.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot;checkbox has been automatically unchecked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Check again the item that has been unchecked.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot; checkbox has been automatically checked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Uncheck a random seller using checkbox next to its name.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot; checkbox has been automatically unchecked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[10]]></step_number>
+	<actions><![CDATA[<p>Check again the&nbsp;seller that has been unchecked using the checkbox next to its name.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot; checkbox has been automatically checked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[11]]></step_number>
+	<actions><![CDATA[<p>Check the &quot;cały koszyk&quot; checkbox and leave the shopping cart page. Pick a random item from the list and add it to the shopping cart.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All&nbsp;the items should be checked including the &quot;cały koszyk&quot; checkbox.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[12]]></step_number>
+	<actions><![CDATA[<p>Check the &quot;cały koszyk&quot; checkbox and leave the shopping cart page. Pick a random item from the list and add it to the shopping cart.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All&nbsp;the items should be checked including the &quot;cały koszyk&quot; checkbox.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="532" name="Checking functionality of removing items.">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[282]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality removes items from the shopping cart.</p>
+
+<p>Here we have two options: we can select few&nbsp;or all items&nbsp;to be removed or do it one by one using the bin icon.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there are a few items from different sellers added&nbsp;to the shopping cart and the user is on the shopping cart page</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>4.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Remove an item (using the bin icon) from your shopping cart.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The item has been removed from the shopping cart.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Remove an&nbsp;item from your shopping cart (using the bin icon), then find this item again and try to add it to the shopping cart.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The item has been successfully added to the shopping cart again.&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Make sure that all items are selected apart from one, use &quot;Usuń&quot; --&gt; &quot;Usuń zaznaczone&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All selected items has been removed apart from this one&nbsp;unchecked item.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Make sure that all items are selected apart from one seller, use &quot;Usuń&quot; --&gt; &quot;Usuń zaznaczone&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All selected items has been removed apart from these items that belong&nbsp;to the seller who has been unchecked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Remove all items from the shopping cart using &quot;Usuń&quot; --&gt; &quot;Usuń Wszystko&quot;.&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The shopping cart is empty.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="579" name="Checking functionality of  the &quot;Dostawa i płatność&quot; button.">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[292]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this button redirects a user to the transaction page.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there are a few items added to the shopping cart and the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Dostawa i płatność&quot; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been redirected to the tansaction page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="582" name="Checking functionality of the &quot;Kontynuuj zakupy&quot; button.">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[293]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this button redirects the user to the last visited page to continue shopping.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there is at least one item&nbsp;added to the shopping cart and the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Kontynuuj zakupy&quot; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user is redirected to the last visited page to continue shopping.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="585" name="Checking functionality of &quot;Kup na raty&quot; button.">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[294]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the user gets redirected to the transaction where after picking any delivery method, the user can go to the installment application.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there is at least one item with an installment option&nbsp;added to the shopping cart and the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Kup na raty&quot; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has been redirected to the transaction page with the installment application.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="546" name="Checking functionality of &quot;Kup teraz&quot;.">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[289]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality gives us an option of buying an item much faster thanks to redirecting us instanlty to the transaction page.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, and there are available products on Allegro website.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Pick a new item and click the &quot;Kup teraz&quot; option.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user gets redirected to the transaction page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="536" name="Checking functionality of &quot;Kupuję i Płacę&quot;">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[284]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality orders items that we have inside our shopping cart,&nbsp;and we become their owners.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there is&nbsp;one item&nbsp;added to the shopping cart and the user is on the transaction page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Pick any delivery method&nbsp;and click the &quot;Kupuję i Płacę&quot; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user has paid and became an owner of the item&nbsp;inside the shopping list.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Add more new items to the shopping cart, then uncheck few of them, then click the &quot;Kupuję i Płacę&quot; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user&nbsp;has paid and became an owner only of the items which have been selected inside the shopping cart.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="538" name="Checking functionality of SMART packet.">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[285]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that when we bought SMART packet, when we have an item that costs 40 polish złoty or more, our shipping is free.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, bought SMART packet, there are&nbsp;added&nbsp;three items to the shopping cart, two&nbsp;have SMART option and cost 40zł or more, and one that doesn&#39;t have SMART option,&nbsp;the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Uncheck the item that doesn&#39;t have SMART option. Click the &quot;Dostawa i Płatność&quot; button, then pick SMART free delivery.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The delivery cost should be 0,00zł.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Make sure that all items are selected.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The option SMART is available for two items that cost 40zł or more, but for the item that doesn&#39;t include SMART option&nbsp;the delivery cost is added.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="540" name="Boundary values for SMART packet.">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[286]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the SMART packet works when an item costs at least 40 zł.&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there are&nbsp;added 3 items to the shopping cart with SMART option:&nbsp;firs&nbsp;item costs less than 40zł, second costs 40zł, and the last one costs more than 40zł, the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Uncheck all items apart from the item for less than 40zł. Then go to the transaction page.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The option SMART isn&#39;t available for this amount of money.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Make sure that selected item is with the price more than 40zł. The rest in deselected. Then go to the transaction page.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The option SMART is available for this amount of money.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Make sure that selected item is with the exact price&nbsp;40zł. The rest in deselected. Then go to the transaction page.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The option SMART is available for this amount of money.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="542" name="Boundary values for the quantity of goods.">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[287]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the user can order only available amount of an item.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there is&nbsp;added a random item to the shopping cart and there are X&nbsp;items in stock of this product, the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Change&nbsp;the amount using a mouse. Set an amount of the item&nbsp;to 0.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Its impossible to set an amount of an item to 0.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Change the amount using a mouse. Set an amount of the item higher than X items in stock.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>It&#39;s impossible to set higher amount of an item than this what is available in stock.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Change the amount using a mouse and set it half of the amount of this item what is in stock.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>This amount of an item is available for the user.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Change the amount using the keyboard. Type in an amount of the product to 0.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Its impossible to set an ammount of an item to 0.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Change the amount using the keyboard. Type in&nbsp;an amount of the item higher than X items in stock.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>It&#39;s impossible to set higer amount of an item than this what is available in stock.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Change the amount using a keyboard and type in&nbsp;half of the amount of this item what is in stock.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>This amount of an item os available fro the user.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="544" name="Mathematical values.">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[288]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the gross value is correctly calculated including&nbsp;previously picked shipping options.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there are a few items added the shopping cart with different prices, the user is on the transaction page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Verify that the gross value for individual items is correct + the shipping cost.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The verification is correct.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Verify that the gross value for all items is correct + the shipping cost.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The verification is correct.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="600" name="An attempt to buy an item by a user not being logged in.">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[296]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that a user can buy items only when he previously been registered on the Allegro website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is NOT log in to Allegro, the user is on the main Allegro page and&nbsp;there are available items to buy on Allegro website.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Add new items or an item to the shopping cart, then click &quot;Dostawa i Płatność&quot; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>This option is not available for users that have not been registered.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="603" name="The shopping cart memory of a user that forgot to log in.">
+	<node_order><![CDATA[16]]></node_order>
+	<externalid><![CDATA[297]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that &nbsp;items which sit inside our shopping cart without being previously logged in will be remembered.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is NOT logged in to Allegro, there are a few items added to the shopping list, the user is on the main Allegro page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Log in to your Allegro account and check your shopping cart again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All previously picked items should be still there.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="609" name="Validation of the &quot;Ilość&quot; field.">
+	<node_order><![CDATA[17]]></node_order>
+	<externalid><![CDATA[298]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this field accepts only positive numbers.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there is an item added to the shopping cart, the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Type inside the field a number smaller than 0.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field doesn&#39;t accept numbers smaller than 0.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Type inside the field some letters(small and big ones),a space, special signs and diacritical marks.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field doesn&#39;t accept letters, special and diacritical marks.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="618" name="Checking functionality of &quot;Inne przedmioty sprzedającego&quot; inside the shopping cart.">
+	<node_order><![CDATA[18]]></node_order>
+	<externalid><![CDATA[299]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality shows a small list of items of a seller from who we added an item to the shopping cart. It is opened by default.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user in logged in to Allegro, there&nbsp;is an item added to the shopping cart, the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Uncheck the option &quot;Inne przedmioty sprzedającego&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The small list of items has been closed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Check the option &quot;Inne przedmioty sprzedającego&quot; again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The small list of items has been opened again.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="624" name="Checking functionality of  the search box inside the &quot;Inne przedmioty sprzedającego&quot; option.">
+	<node_order><![CDATA[19]]></node_order>
+	<externalid><![CDATA[300]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that thanks to this box we can search for more items that the seller may have.&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user in logged in to Allegro, there&nbsp;is an item added to the shopping cart, the user is on the shopping cart page</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Type in any name of an item that is visible inside &quot;Inne predmioty sprzedającego&quot; and click&nbsp;the magnifying glass icon.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Only all the items that contain&nbsp;this name should display on that list.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Type in a name that can&#39;t be found for example: &quot;mydełeczko&quot;&nbsp;and click&nbsp;the magnifying glass icon.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>There is a message saying that the seller doesn&#39;t have this what you are looking for.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="626" name="Validation of the search box inside the &quot;Inne przedmioty sprzedającego&quot; option.">
+	<node_order><![CDATA[20]]></node_order>
+	<externalid><![CDATA[301]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the search box accepts all kinds of data(numbers, diacritical marks, special signs, spaces, letters).</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user in logged in to Allegro, there&nbsp;is an item added to the shopping cart, the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Inside the search&nbsp;box type in some numbers, letters, diacritical marks, special signs and spaces and click the&nbsp;magnifying glass icon.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The search box accepts all of the data, but there is a message saying that the seller doesn&#39;t have this what you are looking for.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="630" name="An attempt of installment purchase of an item without a user being logged in.">
+	<node_order><![CDATA[21]]></node_order>
+	<externalid><![CDATA[302]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that the user can&#39;t buy an item in installments without being logged in to Allegro.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is NOT logged in to Allegro, there is an item added with installments option inside the shopping cart, the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click the &quot;Kup na raty&quot; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The user is redirected to the Allegro login page. The purchase is not possible without an account.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="634" name="Checking functionality of &quot;wyczyść wyszukiwanie&quot; inside the &quot;Inne przedmioty sprzedającego&quot; option">
+	<node_order><![CDATA[22]]></node_order>
+	<externalid><![CDATA[303]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that this functionality clears everything what has been typed in iside the search box.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged to Allegro, there is an item added to the shopping cart, the user is on the shopping cart page.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>1.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Fill in the search&nbsp;box with random data then click &quot;wyczyść wyszukiwanie&quot; option.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All of the data should be cleared out.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>
