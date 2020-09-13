@@ -1,0 +1,990 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testreport Portfolio</title>
+<link type="text/css" rel="stylesheet" href="http://127.0.0.1/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width=231 height=56 src="http://127.0.0.1/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Test Plan Execution Report</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Szkolenie<br/>Test Plan: Portfolio<br/>Test Suite: Portfolio</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 09/13/2020</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="doclevel" >Test Project: Szkolenie</h1>
+<div class="txtlevel"><p>Learning new skills.</p></div>
+ <br/><h1 class='doclevel'>Test Suite : Portfolio</h1>
+<h1 class='doclevel'>Test Suite : Allegro - user registration (Regular account)</h1>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-245: Checking the required fields for registration.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the user can not register without filling in all of the required fields.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in all of the required fields apart from the field &quot;Email&quot;.</p>
+</td><td><p>The user has not been registered. There is an error message about&nbsp; the &quot;Email&quot; field being empty.&nbsp;</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Fill in all of the required fields apart from the field &quot;Hasło&quot;.</p>
+</td><td><p>The user has not been registered. There is an error message about&nbsp; the &quot;Hasło&quot; field being empty.</p>
+</td><td>Informacja o wymaganym polu "Hasło" wyświetla się dwa razy.</td><td>Failed</td></tr><tr><td width="5">3</td><td><p>Fill in all of the required fields apart from the field &quot;Dzień&quot;.</p>
+</td><td><p>The user has not been registered. There is an error message about&nbsp; the &quot;Dzień&quot; field being empty.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Fill in all of the required fields apart from the field &quot;Miesiąc&quot;.</p>
+</td><td><p>The user has not been registered. There is an error message about&nbsp; the &quot;Miesiąc&quot;&nbsp;field being empty.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Fill in all of the required fields apart from the field &quot;Rok&quot;.</p>
+</td><td><p>The user has not been registered. There is an error message about&nbsp; the &quot;Rok&quot; field being empty.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">6</td><td><p>Fill in all of the required fields apart from the field for accepting Allegro regulations.</p>
+
+<p>&nbsp;</p>
+</td><td><p>The user has not been registered. There is an error message about&nbsp; the accepting Allegro regulation&nbsp;field being empty.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">7</td><td><p>Fill in all of the required fields.</p>
+</td><td><p>The user has been successfully registered.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Failed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>3.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-246: Email field verification.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the field accepts only correct email address, which has proper form and doesn&#39;t contain diacritical marks and free space.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address that contains space.</p>
+</td><td><p>There is an error message saying that the &quot;Email&quot; field has been incorrectly filled in.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address that contains diacritical marks.</p>
+</td><td><p>There is an error message saying that the &quot;Email&quot; field has been incorrectly filled in.</p>
+</td><td>Adres e-mail, który zawiera znaki diakrytyczne został pomyślnie przyjęty przez stronę Allegro.</td><td>Failed</td></tr><tr><td width="5">3</td><td><p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address that contains special marks as well as numbers.</p>
+</td><td><p>The user has been successfully registered.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address that contains only big letters.</p>
+</td><td><p>The user has been successfully registered.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address which has incorrect form, for example: @boren90.wp.pl.</p>
+</td><td><p>There is an error message saying that the &quot;Email&quot; field has been incorrectly filled in.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">6</td><td><p>Fill in all of the required fields. Fill in the &quot;Email&quot; field with email address that has correct form, for example: korek90@wp.pl</p>
+</td><td><p>The user has been successfully registered.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">4.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Failed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>3.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-247: Hasło field verification.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the &quot;Hasło&quot; field accepts all of the symbols/marks, and to register, the password must contain at least 8 symbols, 1 big letter, 1 small letter and 1 number.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in the &quot;Hasło&quot; field with diacritical marks, special symbols, numbers, space as well as big letters and small ones.</p>
+</td><td><p>The &quot;Hasło&quot; field should accept of the symbols.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: MartekCZ.</p>
+</td><td><p>There is an error message saying that the password doesn&#39;t contain a number.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: kO8re.</p>
+</td><td><p>There is an error message saying that the password is too short.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: martek89.</p>
+</td><td><p>There is an error message saying that the password doesn&#39;t contain a big letter.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: &quot;*).</p>
+</td><td><p>There is an error message saying that the password doesn&#39;t contain at least one small and big letter, a number and is too short.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">6</td><td><p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: Martek89.</p>
+</td><td><p>The user has been successfully registered.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">7</td><td><p>Fill in all of the required fields. Fill in the &quot;Hasło&quot; field with this data: Martek2445KOKOnas.</p>
+</td><td><p>The user has been successfully registered using long password.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">3.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>2.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-248: Dzień field verification.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the field accepts only numbers by using the keyboard or a&nbsp;mouse.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in the &quot;Dzień&quot; field with diacritical marks, special symbols, space and letters.</p>
+</td><td><p>The field shouldn&#39;t accept this kind of data.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Set up a day using arrows.</p>
+</td><td><p>Arrows should work properly. The upper arrow sets up a day ascending, and the lower arrow descending.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-249: Miesiąc field verification.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the &quot;Miesiąć&quot; field works properly and it can be also set up by using a mouse.</p>
+
+<p>You can navigate through all of the months on the list by using the keyboard and typing in the first letter of a month that you are interested in.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Try to fill in the &quot;Miesiąc&quot; field with diacritical marks, special signs, space and letters.</p>
+</td><td><p>The field accepts only umbers.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Click on the &quot;Miesiąc&quot; field and pick a random month from the list.</p>
+</td><td><p>Chosen month should show up inside the &quot;Miesiąć&quot; field.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Click on the &quot;Miesiąć&quot; field and type in the first letter of a month that you are interested in.</p>
+</td><td><p>Inside the field shows up a month that starts with the&nbsp;letter which has been typed by the user.</p>
+</td><td>Czasem trzeba wpisać daną literę po kilka razy by miesiąc przełączył się na ten którym użytkownik jest zainteresowany, lub dane pole całkowicie przestaje odpowiadać.</td><td>Failed</td></tr><tr><td width="5">4</td><td><p>Click on the &quot;Miesiąć&quot; field and type in the first letter of a month that you are interested in (use only big letters).</p>
+</td><td><p>Inside the field shows up a month that starts with the&nbsp;letter which has been typed by the user.</p>
+</td><td>Czasem trzeba wpisać daną literę po kilka razy by miesiąc przełączył się na ten którym użytkownik jest zainteresowany, lub dane pole całkowicie przestaje odpowiadać.</td><td>Failed</td></tr><tr><td width="5">5</td><td><p>Click the &quot;Miesiąc&quot; field and type in the first letter of a month that starts with &quot;m&quot;, &quot;s&quot; or &quot;l&quot;. Use the same letter at least three times.</p>
+</td><td><p>Inside the field shows up a month that starts with the&nbsp;letter which has been typed by the user. By typing in the same letter a few times it&#39;s&nbsp;possible to navigate to months that starts with the same letter.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">6</td><td><p>Click the &quot;Miesiąć&quot; field and try to type in a&nbsp;full name of a random month.</p>
+</td><td><p>It is impossible to type in a full name of a month using the keyboard.</p>
+
+<p>&nbsp;</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Failed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>4.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-250: Rok field verification.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the &quot;Rok&quot; field works properly and accepts only numbers using a mouse and&nbsp; a&nbsp;keyboard.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill the &quot;Rok&quot; field with diacritical marks, special signs, space and letters.</p>
+</td><td><p>The field should accept only&nbsp;numbers.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Use arrows to set up a random year.</p>
+
+<p>&nbsp;</p>
+</td><td><p>Arrows should work properly. The upper arrow sets up a year ascending, and the lower arrow descending.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-251: Checking functionality that shows encrypted password.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality shows encrypted&nbsp;passwords and encryptes showed ones.&nbsp;By default the entered password should be encrypted.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Click the icon that looks like a crossed eye.</p>
+</td><td><p>The icon now should look just like an eye, and the password should be decrypted.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Click the decryption&nbsp;icon, twice.&nbsp;</p>
+</td><td><p>The icon now should look just like an eye, and the password should be encrypted.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Clear the &quot;Hasło&quot; field. Click the decryption icon and fill in the field with random data again.</p>
+</td><td><p>The password should&nbsp;be decrypted.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Click the decryption icon and refresh the page.</p>
+
+<p>&nbsp;</p>
+</td><td><p>The functionality that decrypts the password should go back to it&#39;s&nbsp;default stage which is encrypting the entered password.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Make sure that the password you typed in also contains diacrytical marks, special signs and some numbers then click the decrytpion icon.</p>
+</td><td><p>The password should be decrypted and shown as it is.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">4.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">Medium</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>3.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-253: Checking functionality that translates the registration page..&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality&nbsp; translates the page in the right way (from polish to english and from english to polish).</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Click the &quot;English Version&quot; link.</p>
+</td><td><p>The page is translated to english.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Click the &quot;Polisg Version&quot; link.</p>
+</td><td><p>The page should be translated to polish.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Click the &quot;English Version&quot; link, after that refresh the page.</p>
+</td><td><p>The site should remeber the picked option and still show the form in english.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Click the &quot;Polish Version&quot; link, after that refresh the page.</p>
+</td><td><p>The site should remember the picked option and still show the form in polish.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Click the&nbsp; &quot;English Version&quot; link. Close Allegro website and open&nbsp;it again. Go back to the Allegro registration page.</p>
+
+<p>&nbsp;</p>
+</td><td><p>The site should remember the picked option and still show the form in english.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">6</td><td><p>Click the &quot;Polish Version&quot; link. Close Allegro website and open it again. Go back to the Allegro registration page.</p>
+</td><td><p>The site should remember the picked option and still show the form in polish.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">4.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>3.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-254: An attempt to register a user with the same login name,&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that it&#39;s&nbsp;not possible to register a user with the same data that already exists in the database.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in all of the required fields with the same data that was used to register the user X.</p>
+</td><td><p>There is an error message saying that an account with this data already exists in Allegro database.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-264: An attempt to register a user with banned account.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that a user that has been blocked can&#39;t register using&nbsp;the same data of banned account.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in all the required fields with the same data of banned account.</p>
+</td><td><p>The user using&nbsp;this data can&#39;t register.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-265: An attempt to register a user with deleted account.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the user with deleted account can be successfully registered.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in all of the required fields with the same data of the deleted account.</p>
+</td><td><p>The user has been successfully registered.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-274: Checking functionality that selects account types.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality shows the appropriate form for a given option.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Try to pick two options&nbsp;: &quot;Konto Zwykłe&quot; and &quot;Konto Firmowe&quot;.</p>
+</td><td><p>Picking two options is impossible.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Pick &quot;Konto Firmowe&quot;.</p>
+</td><td><p>The right form has been diplayed for the given option.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Pick &quot;Konto Zwykłe&quot;.</p>
+</td><td><p>The right form has been displayed for the given option.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Try to deselect any of options by clicking on emply spaces on the page.</p>
+</td><td><p>Deselecting any of option is impossible.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">2.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-275: Checking the dafault account selection which is Regular account.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the&nbsp;default account is always regular account.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Go back to the Allegro main page and click &quot;Zał&oacute;ż Konto&quot; button.</p>
+</td><td><p>Regular account should be set by default.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Go back to the Allegro main page and click &quot;Założ Konto&quot; button. Next pick Business account and use this address:&nbsp;<a href="https://allegro.pl/rejestracja#/">https://allegro.pl/rejestracja#/</a></p>
+</td><td><p>Regular account should be set again, by default.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">Medium</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-278: Checking functionality of the date of birth fields.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We confirm that the dates are correctly adjusted to the days of the months and the year.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in the &quot;Dzień&quot; field with a number 31, for the field &quot;Miesiąc&quot; set February, and pick any randon year from 1900-2020.</p>
+</td><td><p>There is an error message about the wrong day, because February usually has 28 days.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Fill in the &quot;Dzień&quot; field with a number 29, for the field &quot;Miesiąc&quot; set February, and set a year to 2004.</p>
+</td><td><p>The date should be accepted. This is the so-called LEAP-year, it happens every four years, where February exceptionally has 29 days instead of 28.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Fill in the &quot;Dzień&quot; field with a number 30, for the field &quot;Miesiąc&quot; set September, and set a random year between 1900-2020.</p>
+</td><td><p>The date is accepted, but when you type in a year bigger than 2006 then there is a problem with age of the user. The user can&#39;t be younger than 14 to register.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">2.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-276: Boundary values for the &quot;Rok&quot; field.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that it is impossible to set up a year that is smaller&nbsp;than 1900 and bigger&nbsp;that our current year 2020.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>In&nbsp;the &quot;Rok&quot; field type&nbsp;in 1899 year.</p>
+</td><td><p>There is an error message saying that the min. year that can be set is 1900.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>In&nbsp;the &quot;Rok&quot; field type&nbsp;in 2021 year.</p>
+</td><td><p>There is an error message saying that the max. year that can be set is 2020.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>In&nbsp;the &quot;Rok&quot; field type&nbsp;in 1901 year.</p>
+</td><td><p>The user has been successfully registered.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>In&nbsp;the &quot;Rok&quot; field type&nbsp;in 2019 year.</p>
+</td><td><p>The user has been successfully registered.</p>
+</td><td></td><td></td></tr><tr><td width="5">5</td><td><p>In the &quot;Rok&quot; field using arrows set a year smaller than 1900.</p>
+</td><td><p>Its impossible to set up a year smaller than 1900.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">6</td><td><p>In the &quot;Rok&quot; field using arrows set a year bigger than 2020.</p>
+</td><td><p>It&#39;s impossible to set up a year bigger than 2020.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">7</td><td><p>In the &quot;Rok&quot; field type in&nbsp;a three or two digit number.</p>
+</td><td><p>There is an error message about the wrong year.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">8</td><td><p>In the &quot;Rok&quot; field type in&nbsp;a five-digit number.</p>
+</td><td><p>It&#39;s impossible to type in a year that has more than 4 digits.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">9</td><td><p>Try to fill in the &quot;Rok&quot; field with numbers smaller&nbsp;than 0.</p>
+</td><td><p>The field shouldn&#39;t accept numbers smaller than 0.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">4.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>4.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-277: Boundary values for the &quot;Dzień&quot; field.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the field doesn&#39;t accept digits smaller than 1 and bigger than 31.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in the &quot;Dzień&quot; field with a number&nbsp;smaller than 0.</p>
+</td><td><p>The field doesn&#39;t accept smaller numbers than 0.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Fill in the &quot;Dzień&quot; field with a number 0.</p>
+</td><td><p>There is an error message&nbsp;about the wrong day.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Fill in the &quot;Dzień&quot; field with a number bigger than 31.</p>
+</td><td><p>The field doesn&#39;t accept numbers bigger than 31.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Fill the &quot;Dzień&quot; field with a three-digit number.</p>
+</td><td><p>The field doesn&#39;t accept three-digit numbers.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Fill in the &quot;Dzień&quot; field with numbers between 1 and 31.</p>
+</td><td><p>The user has been successfully registered.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">3.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-279: Boundary values for the user's age.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the user younger than 14 can&#39;t register.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Type in this date: 16 July 2007.</p>
+</td><td><p>The date is accepted.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Type in this date: 16 August 2006.</p>
+</td><td><p>The date is accepted.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Type in this date: 16 August 2007.</p>
+</td><td><p>There is an error message that the user has to have at least 14 years to be able to register.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Type in this date: 16 July&nbsp;2008.</p>
+
+<p>&nbsp;</p>
+</td><td><p>There is an error message that the user has to have at least 14 years to be able to register.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">2.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>2.00</b></td></tr>
+</table>
+</div>
+<h1 class='doclevel'>Test Suite : Allegro - user login</h1>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-255: Checking the required fields for logging in.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that user is able to log in only when he/she filled in all of the required fields.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in the &quot;login lub e-mail&quot; field, the field &quot;hasło&quot; leave empty.</p>
+</td><td><p>The website displayed error message that the field &quot;hasło&quot; is required.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Fill in the &quot;hasło&quot; field, leave the &quot;login lub e-mail&quot; field empty.</p>
+</td><td><p>The website displayed error message that the field &quot;login lub email&quot; is required.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Fill in the &quot;login lub e-mail&quot; as well as &quot;hasło&quot; fields.</p>
+</td><td><p>The user has been successfully logged in to Allegro.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Leave the &quot;Login lub e-mail&quot; and &quot;hasło&quot; fields empty.</p>
+</td><td><p>The website displayed error message that&nbsp;both fields are required.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">2.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-256: Validation of the Login/Email and the Hasło field.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the fields accept only and only data that exsists already in the data base and that this data is correctly assigned to the user.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in the field &quot;Login lub email&quot;. The field&nbsp;&#39;Hasło&#39; fill in with data that does not exsist in the Allegro&#39;s data base.</p>
+</td><td><p>There is an error message displayed that the field &quot;Login lub email&quot; or &quot;Hasło&quot; are not correct.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Fill in the&nbsp;&quot;Login lub email&quot; and &quot;Hasło&quot; fieds with data of the first account or the second one.</p>
+</td><td><p>The user has been successfully logged in to Allegro.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Fill in the field &quot;Login lub email&quot; with data that does not exsist in the data base, while the field &quot;Hasło&quot; fill in with correct data that was used while registering one of the Allegro accounts.</p>
+</td><td><p>There is an error message displayed about incorrect data.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Fill in the field &quot;Login lub email&quot; with correct data that was used while registering one of the Allegro accounts, while the field &quot;Hasło&quot; fill in with data that does not exsist in the data base.</p>
+</td><td><p>There is an error message displayed about incorrect data.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Fill in the &quot;Login lub e-mail&quot; field with&nbsp;data of the first account, but the field &quot;Hasło&quot; fill in with data of the second&nbsp;account.</p>
+</td><td><p>There is an error displayed about incorrect data.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">6</td><td><p>Fill in the &quot;Login lub e-mail&quot; field with&nbsp;data of the second account, but the field &quot;Hasło&quot; fill in with data of the first account.</p>
+</td><td><p>There is an error message displayed about incorrect data.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">3.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>3.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-258: Checking functionality that shows encrypted password.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality shows encrypted&nbsp;passwords and encryptes showed ones.&nbsp;By default the entered password should be encrypted.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Click the icon that looks like a crossed eye.</p>
+</td><td><p>The icon now looks like an eye and the password&nbsp; should be shown.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Click the decrypting icon, twice.</p>
+</td><td><p>The icon should look like a crossed eye and the password should be encrypted.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Decrypt the password, after this refresh the page.</p>
+</td><td><p>The functionality that decrypts the password should go back to it&#39;s&nbsp;default stage which is encrypting the entered password.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>The password that has been entered should also contain diacritical marks, special ones as well as numbers then click the decrypting icon.</p>
+</td><td><p>The whole password should be properly decrypted and shown as it is.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Remove the entered password. Click the decrypting icon and then fill in the field &quot;Hasło&quot;&nbsp;again.</p>
+</td><td><p>The entered password isn&#39;t encrypted.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">4.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">Medium</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>2.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-260: Checking functionality of logging into Allegro using Facebook account.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the user is successfully logged in to Allegro website using existing Facebook account.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Click the &quot;Zaloguj przez Facebook&quot; button. Use Facebook account with the same email address, that was also used to register on Allegro website.</p>
+</td><td><p>The message about connecting both accounts has been displayed. The user is successfully logged into Allegro Account.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Click &quot;Zaloguj przez Facebook&quot; button. Use Facebook account with different email address, than email that was also used to register on&nbsp;Allegro webiste.</p>
+</td><td><p>The user didn&#39;t log in. There is a message that given email address doesn&#39;t exist in the data base. There is also&nbsp;a short form to register on Allegro website.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-261: Checking functionality of logging into Allegro using Google account.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the user is successfully logged in to Allegro website using existing Google account.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Click the &quot;Zaloguj przez Google&quot; button. Use Google account with the same email address, that was also used to register on Allegro website.</p>
+</td><td><p>The message about connecting both accounts has been displayed. The user is successfully logged into Allegro Account.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Click &quot;Zaloguj przez Google&quot; button. Use Google account with different email address&nbsp;than email that was also used to register on&nbsp;Allegro webiste.</p>
+</td><td><p>The user didn&#39;t log in. There is a message that given email address doesn&#39;t exist in the data base. There is also&nbsp;a short form to register on Allegro website.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-262: Checking functionality of &quot;Nie pamietasz hasła&quot; link.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality works properly, and after clicking on the link the user is redirected to the password change page.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Click &quot;Nie pamietasz hasła?&quot; link, after redirecting to the password change page, leave the form blank.</p>
+</td><td><p>There is an error message about the lack of an email address or login.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Click &quot;Nie pamietasz hasła?&quot; link, after redirecting to the password change page, fill in the field with data that doesn&#39;t exsists in the Allegro data base.</p>
+</td><td><p>There is a message about the lack of account with this kind of data.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Click &quot;Nie pamietasz hasła?&quot; link, after redirecting to the password change page, fill in the field&nbsp;with data that exists in the Allegro data base.</p>
+</td><td><p>A code to change the password has been sent to the user&#39;s email.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Click &quot;Nie pamiętasz hasła&quot; link, after redirecting to the password change page, fill in the field with an account data that has been banned.</p>
+</td><td><p>There is an error message about&nbsp;wrong login or email.</p>
+</td><td></td><td></td></tr><tr><td width="5">5</td><td><p>Click &quot;Nie pamietasz hasła?&quot; link, after redirecting to the password change page, fill in the field with an account data that has been deleted.</p>
+</td><td><p>There is an error message about&nbsp;wrong login or email.</p>
+</td><td></td><td></td></tr><tr><td width="5">6</td><td><p>Click &quot;Nie pamietasz hasła&quot; link, after redirecting to the password change page, fill in the field with incorrect email address that contains diacritical marks or free space.</p>
+</td><td><p>There is an error message about wrong login or email.</p>
+</td><td></td><td></td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">3.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-266: Blocked user login attempt.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that blocked user can&#39;t log into his/her Allegro account.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Log in to Allegro using data of blocked account.</p>
+</td><td><p>The user couldn&#39;t log in.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-267: An attempt to login a user with deleted account.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the user with deleted account can&#39;t be log in on this&nbsp;account any more.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Log in to Allegro account using data of deleted account.</p>
+</td><td><p>The user can&#39;t log in. There is a message that this account doesn&#39;t exist.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-273: Checking functionality of the &quot;ZAREJESTRUJ SIĘ&quot; button.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this button works properly and after clicking on it, the user is redirected to registration page.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Click the &#39;&#39;ZAREJESTRUJ SIĘ&#39;&#39; button.</p>
+</td><td><p>The user is redirected to the registration allegro page.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<h1 class='doclevel'>Test Suite : Allegro - shopping cart</h1>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-280: Checking functionality of adding an item.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality adds an item with unchanged&nbsp;data.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Add a new item, and click the &quot;Dodaj do koszyka&quot; button.</p>
+</td><td><p>The item has been added to the shopping cart.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Add a new&nbsp;item to the shopping cart, then add another item of the same seller from the small list under the item that you added (&quot;Inne przedmioty sprzedającego&quot;).</p>
+</td><td><p>The item has been added to the shopping cart.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-283: Checking the memory of the shopping cart.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that after leaving our shopping cart our items are still there when we come back.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Go to the main Allegro page, then go back to the shopping cart again.</p>
+</td><td><p>All the previously added items should be still there.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Close Allegro website&nbsp;then go back to the Allegro main page and open your shopping cart again.</p>
+</td><td><p>All the previously added items should be still there.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-291: Checking functionality of &quot;sprzedający&quot; checkbox.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality checks and unchecks items from the same seller. This option is checked by default.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Uncheck a random seller.</p>
+</td><td><p>All&nbsp;items of that seller should be automatically unchecked.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Check the seller that has been unchecked.</p>
+</td><td><p>All&nbsp;items of that seller should be automatically checked again.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Uncheck a random seller,&nbsp;go to the main Allegro page then&nbsp;go back to your shopping cart.</p>
+</td><td><p>The act&nbsp;of unchecking this seller should&nbsp;be remebered by the page.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Select the seller that has been deselected, go to the main Allegro page then go back to your shopping cart.</p>
+</td><td><p>The act of checking this seller should be remembered by the page.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Uncheck a random seller,&nbsp;close Allegro website&nbsp;and then&nbsp;go back to your shopping cart again.</p>
+</td><td><p>The act of unchecking that seller should be remembered by the page.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">6</td><td><p>Select the seller that has been deselected, close Allegro website&nbsp;and then&nbsp;go back to your shopping cart again.</p>
+</td><td><p>The act of checking this seller should be remember by the page.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">3.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>3.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-290: Checking functionality of  checked &quot;cały koszyk&quot; checkbox.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality selects all items inside the shopping cart&nbsp;by default, and by unchecking this checkbox all&nbsp;items in the shopping cart are deselected. Also, when any item is being deselected separately this option is being automatcaly unchecked.&nbsp;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Uncheck the &quot;cały koszyk&quot; checkbox.</p>
+</td><td><p>All items should be deselected and grayed out&nbsp;including the &quot;cały koszyk&quot; box</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Check the &quot;cały koszyk&quot; box and uncheck picked item from the shopping cart using the checkbox next to its image.</p>
+</td><td><p>The &quot;cały koszyk&quot;checkbox has been unchecked, the clicked item is grayed out/inactive but the rest of items are&nbsp;still colorfull and active.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Check the &quot;cały koszyk&quot; again and uncheck a random seller using checkbox next to its name.</p>
+</td><td><p>The &quot;cały koszyk&quot; checkbox stays unchecked, items of the seller grayed out but the rest of items&nbsp; not own by this&nbsp;seller&nbsp;are still colorfull and active.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Go to Allegro home page&nbsp;and go back to the shopping cart.</p>
+</td><td><p>The page has been opended properly, without any errors and the &quot;cały koszyk&quot; checkbox stayed unchecked.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Add a new product to the shopping cart, and go the shopping cart page.</p>
+</td><td><p>The added item should be checked, the rest items stay&nbsp;unchecked including the &quot;cały koszyk&quot; checkbox.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">6</td><td><p>Close Allegro website, then go back to you shopping cart again.</p>
+</td><td><p>All items should stay being unchecked.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">3.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>3.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-304: Checking functionality of  unchecked &quot;cały koszyk&quot; checkbox.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that when you check &quot;cały koszyk&quot; checkbox this functionality&nbsp;selects all items inside the shopping cart and makes them colorfull/active.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Check picked item from the shopping cart using the checkbox next to its image.</p>
+</td><td><p>The &quot;cały koszyk&quot;checkbox stayed unchecked but the clicked item became colorfull/active.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Check the&nbsp;seller who is unchecked using the checkbox next to its name.</p>
+</td><td><p>The &quot;cały koszyk&quot; checkbox stayed unchecked.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Check the &quot;cały koszyk&quot; checkbox.</p>
+</td><td><p>All items should be selected and colorful including the &quot;cały koszyk&quot; option.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Add a new product to the shopping cart, and go the shopping cart page.</p>
+</td><td><p>The added item should be checked, the rest items should be also checked including the &quot;cały koszyk&quot; checkbox.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Go to Allegro home page&nbsp;and go back to the shopping cart.</p>
+</td><td><p>The page has been opened properly, and the &quot;cały koszyk&quot; checkbox stays being checked.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">6</td><td><p>Close Allegro website, then go back to your shopping cart again.</p>
+</td><td><p>All items should stay being checked including the &quot;cały koszyk&quot; checkbox.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">3.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>3.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-282: Checking functionality of removing items.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality removes items from the shopping cart.</p>
+
+<p>Here we have two options: we can select few&nbsp;or all items&nbsp;to be removed or do it one by one using the bin icon.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Remove an item (using the bin icon) from your shopping cart.</p>
+</td><td><p>The item has been removed from the shopping cart.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Remove an&nbsp;item from your shopping cart (using the bin icon), then find this item again and try to add it to the shopping cart.</p>
+</td><td><p>The item has been successfully added to the shopping cart again.&nbsp;</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Make sure that all items are selected apart from one seller, use the&nbsp; &quot;Usuń&quot; link --&gt; &quot;Usuń zaznaczone&quot;.</p>
+</td><td><p>All selected items has been removed apart from these items that belong&nbsp;to the seller who has been unchecked.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Make sure that all items are selected apart from one, use the&nbsp;&quot;Usuń&quot; link --&gt; &quot;Usuń zaznaczone&quot;.</p>
+</td><td><p>All selected items has been removed apart from this one&nbsp;unchecked item.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Remove all items from the shopping cart using the &quot;Usuń&quot; link --&gt; &quot;Usuń Wszystko&quot;.&nbsp;</p>
+</td><td><p>The shopping cart is empty.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">5.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>3.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-292: Checking functionality of  the &quot;Dostawa i płatność&quot; button.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this button redirects a user to the transaction page.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Click the &quot;Dostawa i płatność&quot; button.</p>
+</td><td><p>The user has been redirected to the tansaction page.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-293: Checking functionality of the &quot;Kontynuuj zakupy&quot; button.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this button redirects the user to the last visited page to continue shopping.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Click the &quot;Kontynuuj zakupy&quot; button.</p>
+</td><td><p>The user is redirected to the last visited page to continue shopping.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-294: Checking functionality of &quot;Kup na raty&quot; button.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the user gets redirected to the transaction where after picking any delivery method, the user can go to the installment application.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Click the &quot;Kup na raty&quot; button.</p>
+</td><td><p>The user has been redirected to the transaction page with the installment application.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-289: Checking functionality of &quot;Kup teraz&quot;.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality gives us an option of buying an item much faster thanks to redirecting us instanlty to the transaction page.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Pick a new item and click the &quot;Kup teraz&quot; option.</p>
+</td><td><p>The user gets redirected to the transaction page.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-284: Checking functionality of &quot;Kupuję i Płacę&quot;&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality orders items that we have inside our shopping cart,&nbsp;and we become their owners.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Pick any delivery method&nbsp;and click the &quot;Kupuję i Płacę&quot; button.</p>
+</td><td><p>The user has paid and became an owner of the item&nbsp;inside the shopping list.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Add more new items to the shopping cart, then uncheck few of them, then click the &quot;Kupuję i Płacę&quot; button.</p>
+</td><td><p>The user&nbsp;has paid and became an owner only of the items which have been selected inside the shopping cart.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-285: Checking functionality of SMART packet.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that when we bought SMART packet, when we have an item that costs 40 polish złoty or more, our shipping is free.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Make sure that all items are selected then click &quot;Dostawa i Płatność&quot; button.</p>
+</td><td><p>The option SMART is available for two items that cost 40zł or more, but for the item that doesn&#39;t include SMART option&nbsp;the delivery cost is added.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Inside the shopping cart uncheck the item that doesn&#39;t have SMART option. Click the &quot;Dostawa i Płatność&quot; button, then pick SMART free delivery.</p>
+</td><td><p>The delivery cost should be 0,00zł.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>2.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-286: Boundary values for SMART packet.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the SMART packet works when an item costs at least 40 zł.&nbsp;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Uncheck all items apart from the item for less than 40zł. Then go to the transaction page.</p>
+</td><td><p>The option SMART isn&#39;t available for this amount of money.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Make sure that selected item is with the price more than 40zł. The rest in deselected. Then go to the transaction page.</p>
+</td><td><p>The option SMART is available for this amount of money.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Make sure that selected item is with the exact price&nbsp;40zł. The rest in deselected. Then go to the transaction page.</p>
+</td><td><p>The option SMART is available for this amount of money.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">2.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>2.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-287: Boundary values for the quantity of goods.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the user can order only available amount of an item.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Change&nbsp;the amount using a mouse. Set an amount of the item&nbsp;to 0.</p>
+</td><td><p>Its impossible to set an amount of an item to 0.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Change the amount using a mouse. Set an amount of the item higher than X items in stock.</p>
+</td><td><p>It&#39;s impossible to set higher amount of an item than this what is available in stock.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">3</td><td><p>Change the amount using a mouse and set it half of the amount of this item what is in stock.</p>
+</td><td><p>This amount of an item is available for the user.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">4</td><td><p>Change the amount using the keyboard. Type in an amount of the product to 0.</p>
+</td><td><p>Its impossible to set an ammount of an item to 0.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">5</td><td><p>Change the amount using the keyboard. Type in&nbsp;an amount of the item higher than X items in stock.</p>
+</td><td><p>It&#39;s impossible to set higer amount of an item than this what is available in stock.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">6</td><td><p>Change the amount using a keyboard and type in&nbsp;half of the amount of this item what is in stock.</p>
+</td><td><p>This amount of an item os available fro the user.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">3.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>2.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-288: Mathematical values.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the gross value is correctly calculated including&nbsp;previously picked shipping options.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Verify that the gross value for individual items is correct + the shipping cost.</p>
+</td><td><p>The verification is correct.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Verify that the gross value for all items is correct + the shipping cost.</p>
+</td><td><p>The verification is correct.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-296: An attempt to buy an item by a user not being logged in.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that a user can buy items only when he previously been registered on the Allegro website.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Add new items or an item to the shopping cart, then click &quot;Dostawa i Płatność&quot; button.</p>
+</td><td><p>This option is not available for users that have not been registered.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-297: The shopping cart memory of a user that forgot to log in.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that &nbsp;items which sit inside our shopping cart without being previously logged in will be remembered.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Log in to your Allegro account and check your shopping cart again.</p>
+</td><td><p>All previously picked items should be still there.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-298: Validation of the &quot;Ilość&quot; field.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this field accepts only positive numbers.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Type inside the field a number smaller than 0.</p>
+</td><td><p>The field doesn&#39;t accept numbers smaller than 0.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Type inside the field some letters(small and big ones),a space, special signs and diacritical marks.</p>
+</td><td><p>The field doesn&#39;t accept letters, special and diacritical marks.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-299: Checking functionality of &quot;Inne przedmioty sprzedającego&quot; inside the shopping cart.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality shows a small list of items of a seller from who we added an item to the shopping cart. It is opened by default.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Uncheck the option &quot;Inne przedmioty sprzedającego&quot; using the arrow.</p>
+</td><td><p>The small list of items has been hidden.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Check the option &quot;Inne przedmioty sprzedającego&quot; again using the arrow.</p>
+</td><td><p>The small list of items has opened.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-300: Checking functionality of  the search box inside the &quot;Inne przedmioty sprzedającego&quot; option.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that thanks to this box we can search for more items that the seller may have.&nbsp;</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Type in any name of an item that is visible inside &quot;Inne predmioty sprzedającego&quot; and click&nbsp;the magnifying glass icon.</p>
+</td><td><p>Only all the items that contain&nbsp;this name should display on that list.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="5">2</td><td><p>Type in a name that can&#39;t be found for example: &quot;mydełeczko&quot;&nbsp;and click&nbsp;the magnifying glass icon.</p>
+</td><td><p>There is a message saying that the seller doesn&#39;t have this what you are looking for.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-301: Validation of the search box inside the &quot;Inne przedmioty sprzedającego&quot; option.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the search box accepts all kinds of data(numbers, diacritical marks, special signs, spaces, letters).</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Inside the search&nbsp;box type in some numbers, letters, diacritical marks, special signs and spaces and click the&nbsp;magnifying glass icon.</p>
+</td><td><p>The search box accepts all of the data, but there is a message saying that the seller doesn&#39;t have this what you are looking for.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-302: An attempt of installment purchase of an item without a user being logged in.&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that the user can&#39;t buy an item in installments without being logged in to Allegro.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Click the &quot;Kup na raty&quot; button.</p>
+</td><td><p>The user is redirected to the Allegro login page. The purchase is not possible without an account.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">High</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="6">Test Case Szkol-303: Checking functionality of &quot;wyczyść wyszukiwanie&quot; inside the &quot;Inne przedmioty sprzedającego&quot; option&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td colspan="6"><span class="label">Summary:</span><br /><p>We are confirming that this functionality clears everything what has been typed in iside the search box.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution notes:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>Fill in the search&nbsp;box with random data then click &quot;wyczyść wyszukiwanie&quot; option.</p>
+</td><td><p>All of the data should be cleared out.</p>
+</td><td></td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="5">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="5">1.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="5">Medium</td></tr>
+<tr><td colspan="6"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="5">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="5">Allegro 25.08.2020</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="5" >maga</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="5" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="5" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="5" ><b>1.00</b></td></tr>
+</table>
+</div>
+
+</body>
+</html>
