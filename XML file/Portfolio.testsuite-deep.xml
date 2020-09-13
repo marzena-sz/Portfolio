@@ -743,7 +743,7 @@
 ]]></preconditions>
 	<execution_type><![CDATA[1]]></execution_type>
 	<importance><![CDATA[3]]></importance>
-	<estimated_exec_duration>6.00</estimated_exec_duration>
+	<estimated_exec_duration>4.00</estimated_exec_duration>
 	<status>1</status>
 	<is_open>1</is_open>
 	<active>1</active>
@@ -1360,7 +1360,7 @@
 <details><![CDATA[]]></details> 
 
 <testcase internalid="528" name="Checking functionality of adding an item.">
-	<node_order><![CDATA[1]]></node_order>
+	<node_order><![CDATA[0]]></node_order>
 	<externalid><![CDATA[280]]></externalid>
 	<version><![CDATA[1]]></version>
 	<summary><![CDATA[<p>We are confirming that this functionality adds an item with unchanged&nbsp;data.</p>
@@ -1395,7 +1395,7 @@
 </testcase>
 
 <testcase internalid="534" name="Checking the memory of the shopping cart.">
-	<node_order><![CDATA[2]]></node_order>
+	<node_order><![CDATA[1]]></node_order>
 	<externalid><![CDATA[283]]></externalid>
 	<version><![CDATA[1]]></version>
 	<summary><![CDATA[<p>We are confirming that after leaving our shopping cart our items are still there when we come back.</p>
@@ -1430,7 +1430,7 @@
 </testcase>
 
 <testcase internalid="558" name="Checking functionality of &quot;sprzedający&quot; checkbox.">
-	<node_order><![CDATA[3]]></node_order>
+	<node_order><![CDATA[2]]></node_order>
 	<externalid><![CDATA[291]]></externalid>
 	<version><![CDATA[1]]></version>
 	<summary><![CDATA[<p>We are confirming that this functionality checks and unchecks items from the same seller. This option is checked by default.</p>
@@ -1500,17 +1500,17 @@
 </steps>
 </testcase>
 
-<testcase internalid="551" name="Checking functionality of &quot;cały koszyk&quot; checkbox.">
-	<node_order><![CDATA[4]]></node_order>
+<testcase internalid="551" name="Checking functionality of  checked &quot;cały koszyk&quot; checkbox.">
+	<node_order><![CDATA[3]]></node_order>
 	<externalid><![CDATA[290]]></externalid>
 	<version><![CDATA[1]]></version>
-	<summary><![CDATA[<p>We are confirming that this functionality selects all items inside the shopping cart&nbsp;by default, and by unchecking this checkbox all&nbsp;items in the shopping cart are deselected. Also, when any item is being deselected separately this option is being automatcaly unchecked.</p>
+	<summary><![CDATA[<p>We are confirming that this functionality selects all items inside the shopping cart&nbsp;by default, and by unchecking this checkbox all&nbsp;items in the shopping cart are deselected. Also, when any item is being deselected separately this option is being automatcaly unchecked.&nbsp;</p>
 ]]></summary>
-	<preconditions><![CDATA[<p>The user is logged in to Allegro and the shopping cart is opened, inside the shopping cart there are a few items already added.</p>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro and the shopping cart is opened, inside the shopping cart there are a few items already added. The &quot;cały koszyk&quot; checkbox&nbsp;is checked.</p>
 ]]></preconditions>
 	<execution_type><![CDATA[1]]></execution_type>
 	<importance><![CDATA[3]]></importance>
-	<estimated_exec_duration>4.00</estimated_exec_duration>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
 	<status>1</status>
 	<is_open>1</is_open>
 	<active>1</active>
@@ -1526,18 +1526,89 @@
 
 <step>
 	<step_number><![CDATA[2]]></step_number>
-	<actions><![CDATA[<p>Check the &quot;cały koszyk&quot; checkbox again.</p>
+	<actions><![CDATA[<p>Check the &quot;cały koszyk&quot; box and uncheck picked item from the shopping cart using the checkbox next to its image.</p>
 ]]></actions>
-	<expectedresults><![CDATA[<p>All items should be selected and colorful including the &quot;cały koszyk&quot; option.</p>
+	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot;checkbox has been unchecked, the clicked item is grayed out/inactive but the rest of items are&nbsp;still colorfull and active.</p>
 ]]></expectedresults>
 	<execution_type><![CDATA[1]]></execution_type>
 </step>
 
 <step>
 	<step_number><![CDATA[3]]></step_number>
-	<actions><![CDATA[<p>Uncheck the &quot;cały koszyk&quot; checkbox and leave the shopping cart page.</p>
+	<actions><![CDATA[<p>Check the &quot;cały koszyk&quot; again and uncheck a random seller using checkbox next to its name.</p>
 ]]></actions>
-	<expectedresults><![CDATA[<p>The page has been opended properly, without any errors.</p>
+	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot; checkbox stays unchecked, items of the seller grayed out but the rest of items&nbsp; not own by this&nbsp;seller&nbsp;are still colorfull and active.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Go to Allegro home page&nbsp;and go back to the shopping cart.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page has been opended properly, without any errors and the &quot;cały koszyk&quot; checkbox stayed unchecked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Add a new product to the shopping cart, and go the shopping cart page.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The added item should be checked, the rest items stay&nbsp;unchecked including the &quot;cały koszyk&quot; checkbox.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Close Allegro website, then go back to you shopping cart again.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All items should stay being unchecked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="639" name="Checking functionality of  unchecked &quot;cały koszyk&quot; checkbox.">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[304]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>We are confirming that when you check &quot;cały koszyk&quot; checkbox this functionality&nbsp;selects all items inside the shopping cart and makes them colorfull/active.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro and the shopping cart is opened, inside the shopping cart there are a few items already added. The &quot;cały koszyk&quot; checkbox&nbsp;is unchecked.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+	<estimated_exec_duration>3.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Check picked item from the shopping cart using the checkbox next to its image.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot;checkbox stayed unchecked but the clicked item became colorfull/active.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Check the&nbsp;seller who is unchecked using the checkbox next to its name.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot; checkbox stayed unchecked.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Check the &quot;cały koszyk&quot; checkbox.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All items should be selected and colorful including the &quot;cały koszyk&quot; option.</p>
 ]]></expectedresults>
 	<execution_type><![CDATA[1]]></execution_type>
 </step>
@@ -1546,79 +1617,25 @@
 	<step_number><![CDATA[4]]></step_number>
 	<actions><![CDATA[<p>Add a new product to the shopping cart, and go the shopping cart page.</p>
 ]]></actions>
-	<expectedresults><![CDATA[<p>The added item should be checked, the rest items stay&nbsp;unchecked.</p>
+	<expectedresults><![CDATA[<p>The added item should be checked, the rest items should be also checked including the &quot;cały koszyk&quot; checkbox.</p>
 ]]></expectedresults>
 	<execution_type><![CDATA[1]]></execution_type>
 </step>
 
 <step>
 	<step_number><![CDATA[5]]></step_number>
-	<actions><![CDATA[<p>Uncheck the &quot;cały koszyk&quot; checkbox and close Allegro website, then go back to you shopping cart again.</p>
+	<actions><![CDATA[<p>Go to Allegro home page&nbsp;and go back to the shopping cart.</p>
 ]]></actions>
-	<expectedresults><![CDATA[<p>All items should stay being unchecked.</p>
+	<expectedresults><![CDATA[<p>The page has been opened properly, and the &quot;cały koszyk&quot; checkbox stays being checked.</p>
 ]]></expectedresults>
 	<execution_type><![CDATA[1]]></execution_type>
 </step>
 
 <step>
 	<step_number><![CDATA[6]]></step_number>
-	<actions><![CDATA[<p>Check the &quot;cały koszyk&quot; checkbox and close Allegro website, then go back to you shopping cart again.</p>
+	<actions><![CDATA[<p>Close Allegro website, then go back to your shopping cart again.</p>
 ]]></actions>
-	<expectedresults><![CDATA[<p>All items should stay being checked.</p>
-]]></expectedresults>
-	<execution_type><![CDATA[1]]></execution_type>
-</step>
-
-<step>
-	<step_number><![CDATA[7]]></step_number>
-	<actions><![CDATA[<p>Uncheck picked item from the shopping cart using the checkbox next to its image.</p>
-]]></actions>
-	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot;checkbox has been automatically unchecked.</p>
-]]></expectedresults>
-	<execution_type><![CDATA[1]]></execution_type>
-</step>
-
-<step>
-	<step_number><![CDATA[8]]></step_number>
-	<actions><![CDATA[<p>Check again the item that has been unchecked.</p>
-]]></actions>
-	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot; checkbox has been automatically checked.</p>
-]]></expectedresults>
-	<execution_type><![CDATA[1]]></execution_type>
-</step>
-
-<step>
-	<step_number><![CDATA[9]]></step_number>
-	<actions><![CDATA[<p>Uncheck a random seller using checkbox next to its name.</p>
-]]></actions>
-	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot; checkbox has been automatically unchecked.</p>
-]]></expectedresults>
-	<execution_type><![CDATA[1]]></execution_type>
-</step>
-
-<step>
-	<step_number><![CDATA[10]]></step_number>
-	<actions><![CDATA[<p>Check again the&nbsp;seller that has been unchecked using the checkbox next to its name.</p>
-]]></actions>
-	<expectedresults><![CDATA[<p>The &quot;cały koszyk&quot; checkbox has been automatically checked.</p>
-]]></expectedresults>
-	<execution_type><![CDATA[1]]></execution_type>
-</step>
-
-<step>
-	<step_number><![CDATA[11]]></step_number>
-	<actions><![CDATA[<p>Check the &quot;cały koszyk&quot; checkbox and leave the shopping cart page. Pick a random item from the list and add it to the shopping cart.</p>
-]]></actions>
-	<expectedresults><![CDATA[<p>All&nbsp;the items should be checked including the &quot;cały koszyk&quot; checkbox.</p>
-]]></expectedresults>
-	<execution_type><![CDATA[1]]></execution_type>
-</step>
-
-<step>
-	<step_number><![CDATA[12]]></step_number>
-	<actions><![CDATA[<p>Check the &quot;cały koszyk&quot; checkbox and leave the shopping cart page. Pick a random item from the list and add it to the shopping cart.</p>
-]]></actions>
-	<expectedresults><![CDATA[<p>All&nbsp;the items should be checked including the &quot;cały koszyk&quot; checkbox.</p>
+	<expectedresults><![CDATA[<p>All items should stay being checked including the &quot;cały koszyk&quot; checkbox.</p>
 ]]></expectedresults>
 	<execution_type><![CDATA[1]]></execution_type>
 </step>
@@ -1633,11 +1650,13 @@
 
 <p>Here we have two options: we can select few&nbsp;or all items&nbsp;to be removed or do it one by one using the bin icon.</p>
 ]]></summary>
-	<preconditions><![CDATA[<p>The user is logged in to Allegro, there are a few items from different sellers added&nbsp;to the shopping cart and the user is on the shopping cart page</p>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there are a few items from different sellers added&nbsp;to the shopping cart and the user is on the shopping cart page.</p>
+
+<p>Preconditions apply to every step action.</p>
 ]]></preconditions>
 	<execution_type><![CDATA[1]]></execution_type>
 	<importance><![CDATA[3]]></importance>
-	<estimated_exec_duration>4.00</estimated_exec_duration>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
 	<status>1</status>
 	<is_open>1</is_open>
 	<active>1</active>
@@ -1662,16 +1681,7 @@
 
 <step>
 	<step_number><![CDATA[3]]></step_number>
-	<actions><![CDATA[<p>Make sure that all items are selected apart from one, use &quot;Usuń&quot; --&gt; &quot;Usuń zaznaczone&quot;.</p>
-]]></actions>
-	<expectedresults><![CDATA[<p>All selected items has been removed apart from this one&nbsp;unchecked item.</p>
-]]></expectedresults>
-	<execution_type><![CDATA[1]]></execution_type>
-</step>
-
-<step>
-	<step_number><![CDATA[4]]></step_number>
-	<actions><![CDATA[<p>Make sure that all items are selected apart from one seller, use &quot;Usuń&quot; --&gt; &quot;Usuń zaznaczone&quot;.</p>
+	<actions><![CDATA[<p>Make sure that all items are selected apart from one seller, use the&nbsp; &quot;Usuń&quot; link --&gt; &quot;Usuń zaznaczone&quot;.</p>
 ]]></actions>
 	<expectedresults><![CDATA[<p>All selected items has been removed apart from these items that belong&nbsp;to the seller who has been unchecked.</p>
 ]]></expectedresults>
@@ -1679,8 +1689,17 @@
 </step>
 
 <step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Make sure that all items are selected apart from one, use the&nbsp;&quot;Usuń&quot; link --&gt; &quot;Usuń zaznaczone&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>All selected items has been removed apart from this one&nbsp;unchecked item.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
 	<step_number><![CDATA[5]]></step_number>
-	<actions><![CDATA[<p>Remove all items from the shopping cart using &quot;Usuń&quot; --&gt; &quot;Usuń Wszystko&quot;.&nbsp;</p>
+	<actions><![CDATA[<p>Remove all items from the shopping cart using the &quot;Usuń&quot; link --&gt; &quot;Usuń Wszystko&quot;.&nbsp;</p>
 ]]></actions>
 	<expectedresults><![CDATA[<p>The shopping cart is empty.</p>
 ]]></expectedresults>
@@ -1845,18 +1864,18 @@
 <steps>
 <step>
 	<step_number><![CDATA[1]]></step_number>
-	<actions><![CDATA[<p>Uncheck the item that doesn&#39;t have SMART option. Click the &quot;Dostawa i Płatność&quot; button, then pick SMART free delivery.</p>
+	<actions><![CDATA[<p>Make sure that all items are selected then click &quot;Dostawa i Płatność&quot; button.</p>
 ]]></actions>
-	<expectedresults><![CDATA[<p>The delivery cost should be 0,00zł.</p>
+	<expectedresults><![CDATA[<p>The option SMART is available for two items that cost 40zł or more, but for the item that doesn&#39;t include SMART option&nbsp;the delivery cost is added.</p>
 ]]></expectedresults>
 	<execution_type><![CDATA[1]]></execution_type>
 </step>
 
 <step>
 	<step_number><![CDATA[2]]></step_number>
-	<actions><![CDATA[<p>Make sure that all items are selected.</p>
+	<actions><![CDATA[<p>Inside the shopping cart uncheck the item that doesn&#39;t have SMART option. Click the &quot;Dostawa i Płatność&quot; button, then pick SMART free delivery.</p>
 ]]></actions>
-	<expectedresults><![CDATA[<p>The option SMART is available for two items that cost 40zł or more, but for the item that doesn&#39;t include SMART option&nbsp;the delivery cost is added.</p>
+	<expectedresults><![CDATA[<p>The delivery cost should be 0,00zł.</p>
 ]]></expectedresults>
 	<execution_type><![CDATA[1]]></execution_type>
 </step>
@@ -1913,7 +1932,7 @@
 	<version><![CDATA[1]]></version>
 	<summary><![CDATA[<p>We are confirming that the user can order only available amount of an item.</p>
 ]]></summary>
-	<preconditions><![CDATA[<p>The user is logged in to Allegro, there is&nbsp;added a random item to the shopping cart and there are X&nbsp;items in stock of this product, the user is on the shopping cart page.</p>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there is&nbsp;a random item added to the shopping cart and there are X&nbsp;items in stock of this product, the user is on the shopping cart page.</p>
 ]]></preconditions>
 	<execution_type><![CDATA[1]]></execution_type>
 	<importance><![CDATA[3]]></importance>
@@ -2117,18 +2136,18 @@
 <steps>
 <step>
 	<step_number><![CDATA[1]]></step_number>
-	<actions><![CDATA[<p>Uncheck the option &quot;Inne przedmioty sprzedającego&quot;.</p>
+	<actions><![CDATA[<p>Uncheck the option &quot;Inne przedmioty sprzedającego&quot; using the arrow.</p>
 ]]></actions>
-	<expectedresults><![CDATA[<p>The small list of items has been closed.</p>
+	<expectedresults><![CDATA[<p>The small list of items has been hidden.</p>
 ]]></expectedresults>
 	<execution_type><![CDATA[1]]></execution_type>
 </step>
 
 <step>
 	<step_number><![CDATA[2]]></step_number>
-	<actions><![CDATA[<p>Check the option &quot;Inne przedmioty sprzedającego&quot; again.</p>
+	<actions><![CDATA[<p>Check the option &quot;Inne przedmioty sprzedającego&quot; again using the arrow.</p>
 ]]></actions>
-	<expectedresults><![CDATA[<p>The small list of items has been opened again.</p>
+	<expectedresults><![CDATA[<p>The small list of items has opened.</p>
 ]]></expectedresults>
 	<execution_type><![CDATA[1]]></execution_type>
 </step>
@@ -2228,7 +2247,7 @@
 	<version><![CDATA[1]]></version>
 	<summary><![CDATA[<p>We are confirming that this functionality clears everything what has been typed in iside the search box.</p>
 ]]></summary>
-	<preconditions><![CDATA[<p>The user is logged to Allegro, there is an item added to the shopping cart, the user is on the shopping cart page.</p>
+	<preconditions><![CDATA[<p>The user is logged in to Allegro, there is an item added to the shopping cart, the user is on the shopping cart page.</p>
 ]]></preconditions>
 	<execution_type><![CDATA[1]]></execution_type>
 	<importance><![CDATA[2]]></importance>
